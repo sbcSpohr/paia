@@ -1,0 +1,13 @@
+Exemplos de uso em outros dispositivos:
+
+Na mesma máquina: funciona com localhost:1234 (como você usou).
+
+Em outro computador da rede local: basta trocar localhost pelo IP da máquina do servidor.
+
+	 Ex: rpc.Dial("tcp", "192.168.1.10:1234")
+
+ Via internet (NÃO recomendado para este trabalho):
+
+        Precisa liberar a porta no roteador (NAT), ter IP fixo ou usar um túnel.
+
+        Não recomendado por segurança e complexidade.
